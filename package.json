@@ -6,6 +6,7 @@
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "source": "src/index.tsx",
+  "private": false,
   "scripts": {
     "build:esm": "tsc -p ./types/tsconfig.json",
     "build:cjs": "tsc -m commonjs --outDir dist/cjs -p ./types/tsconfig.json",
