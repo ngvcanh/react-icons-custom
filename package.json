@@ -1,0 +1,49 @@
+{
+  "name": "@kensoni/react-icons",
+  "version": "4.2.0",
+  "description": "Custom react-icons package",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "source": "src/index.tsx",
+  "scripts": {
+    "build:esm": "tsc -p ./types/tsconfig.json",
+    "build:cjs": "tsc -m commonjs --outDir dist/cjs -p ./types/tsconfig.json",
+    "build": "npm run build:esm && npm run build:cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngvcanh/react-icons-custom.git"
+  },
+  "keywords": [
+    "react-icons",
+    "react",
+    "icons"
+  ],
+  "author": "Ken Nguyen <ngvcanh2014@gmail.com> (https://kensoni.vn/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngvcanh/react-icons-custom/issues"
+  },
+  "homepage": "https://github.com/ngvcanh/react-icons-custom#readme",
+  "dependencies": {
+    "react-icons": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.8",
+    "@types/react-icons": "^3.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.3.4"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "files": [
+    "dist",
+    "src",
+    "types"
+  ]
+}
