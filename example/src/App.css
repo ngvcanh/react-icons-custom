@@ -1,0 +1,145 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.kensoni-react-icons{
+  display: flex;
+  width: 80%;
+  min-height: 125px;
+  border: 1px solid #61dafb;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.kensoni-react-icons svg{
+  font-size: 60px;
+  color: #61dafb;
+}
+
+.kensoni-react-icons div{
+  width: 100%;
+  display: block;
+  background-color: #61dafb;
+  color: #000;
+  font-family: monospace;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.kensoni-code{
+  width: 80%;
+  margin-top: 2rem;
+  font-size: 13px;
+  font-family: monospace;
+  text-align: left;
+  line-height: 25px;
+  font-weight: 600;
+  border: 1px solid #61dafb
+}
+
+.kensoni-code-title{
+  background-color: #61dafb;
+  padding: 0 15px;
+  color: #282c34
+}
+
+.kensoni-code-command{
+  padding: 0 15px 0 45px;
+  line-height: 40px;
+  color: #61dafb;
+  position: relative;
+}
+
+.kensoni-code-command::before{
+  position: absolute;
+  content: '>';
+  top: 0;
+  left: 15px;
+  bottom: 0;
+  line-height: 40px;
+}
+
+.kensoni-code-command.cm1::before{
+  content: '1';
+}
+
+.ks-white{
+  color: #fff;
+}
+
+.ks-gray{
+  color: #666;
+}
+
+.ks-yellow{
+  color: #f5f543;
+}
+
+.ks-pink{
+  color: #c586c0;
+}
+
+.ks-green{
+  color: #4ec9b0;
+}
+
+.ks-var{
+  color: #9cdcfe;
+}
+
+.ks-str{
+  color: #ce9178;
+}
+
+.ks-tag{
+  color: #808080;
+}
+
+.ks-tagname{
+  color: #569cd6;
+}
+
+.ks-obj{
+  color: #4fc1ff;
+}
+
+.ks-fn{
+  color: #dcdcaa;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
